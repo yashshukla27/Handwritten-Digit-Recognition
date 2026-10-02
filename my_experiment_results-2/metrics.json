@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-10-02T21:02:51.022397+00:00",
+  "seed": 42,
+  "epochs": 40,
+  "batch_size": 64,
+  "learning_rate": 0.001,
+  "split_sizes": {
+    "train": 1257,
+    "validation": 270,
+    "test": 270
+  },
+  "python": "3.13.15",
+  "numpy": "2.2.6",
+  "sklearn": "1.8.0",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "results": [
+    {
+      "model": "MLP",
+      "parameters": 6570,
+      "best_epoch": 28,
+      "validation_accuracy": 0.9592592592592593,
+      "test_accuracy": 0.9666666666666667,
+      "macro_precision": 0.9681538461538463,
+      "macro_recall": 0.9663715913715916,
+      "macro_f1": 0.9667156140955168,
+      "training_seconds": 0.3796791900001608
+    },
+    {
+      "model": "CNN",
+      "parameters": 9658,
+      "best_epoch": 33,
+      "validation_accuracy": 0.9703703703703703,
+      "test_accuracy": 0.9777777777777777,
+      "macro_precision": 0.9785582010582011,
+      "macro_recall": 0.9773402523402523,
+      "macro_f1": 0.9776207784402511,
+      "training_seconds": 1.1239265039998827
+    }
+  ]
+}

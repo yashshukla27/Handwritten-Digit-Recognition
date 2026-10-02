@@ -1,0 +1,70 @@
+HANDWRITTEN DIGIT RECOGNITION - ICT 4442 INTERIM PACKAGE
+YASH SHUKLA | 210911380 | Individual project
+GitHub profile: https://github.com/yashshukla27
+Repository URL: pending creation and push
+
+WHAT THIS PROJECT DOES
+A computer sees a tiny image of a handwritten number and predicts 0 to 9.
+Two different neural networks are trained and compared: MLP and CNN.
+A row-wise LSTM is proposed for the final phase. It is not implemented here.
+
+START WITH THESE FILES
+1. Beginner_Guide.pdf: simple explanations and viva practice.
+2. Interim_Report.docx: editable report; PDF is the matching reading copy.
+3. Run_Project.ipynb: upload this notebook to Google Colab and run cells top to bottom.
+4. results/: actual metrics, trained weights, predictions, split indices and logs.
+
+EASIEST WAY TO RUN
+Open https://colab.research.google.com and upload Run_Project.ipynb.
+Execute each cell using the triangular play button. The notebook contains the
+training code, so no other project file upload is required. It uses CPU only.
+The last cell downloads experiment evidence as a ZIP.
+If Colab is unavailable, install Python 3.12, open a terminal in this folder:
+  python -m pip install -r requirements.txt
+  python check_gradients.py
+  python train.py
+  python demo.py
+Training regenerates results; timings may differ on another machine.
+
+BEFORE SUBMISSION - YOU MUST COMPLETE THESE ITEMS
+- Confirm the deadline with your teacher. The supplied guideline says
+  25 September 2026, not tomorrow relative to 3 October 2026 in India.
+- Confirm the topic is allowed, and reconcile it with any already-approved synopsis.
+- The report now follows the supplied official Part B template and contains five pages including the institutional cover.
+- Your name, registration number and individual-project status are filled. Confirm the actual submission date.
+- Understand and rerun the experiments; inspect the outputs and record real work.
+- Your supplied signature is inserted. Update the solo contribution log after your own review and rerun; the present log discloses assisted work.
+- Use genuine commits under your own account. No past commits or independent student implementation are claimed here.
+- Obtain institutional Turnitin similarity and AI-content reports. The guideline
+  requires <=15% plagiarism and <=20% AI content. No score is guaranteed by this package.
+- Keep the AI-use disclosure accurate. Review and rewrite the report based on your
+  understanding; do not submit generated text as unaided personal work.
+- Upload Part B via the class MS Forms link. The supplied Part B template explicitly
+  asks for a repository link and contribution commit history, unlike the earlier
+  guidelines. Provide the actual repository URL after creation; a profile URL is not enough.
+
+GENUINE GIT EVIDENCE
+Create a repository under yashshukla27 using your own account. Commit work you
+actually do using your own name and email. Start now; do not backdate anything.
+For example, after a real code review/change or rerun:
+  git init
+  git add train.py check_gradients.py requirements.txt
+  git commit -m "Review and verify assisted MLP and CNN implementations"
+  git log --date=iso --pretty=format:"%h | %an | %ad | %s" > contribution_history.txt
+Only run the example commit after doing that work. A single initial import is not
+evidence of earlier development. Explain the true timeline to faculty.
+No repository has been published or submitted by this assistant.
+
+AI DISCLOSURE
+ChatGPT assisted with topic selection, source summaries, NumPy implementation,
+gradient checks, experiment execution, notebook, report and beginner guide during
+this session. The measured results were generated in the assistant execution
+environment on 2 October UTC / 3 October India time, not before 25 September.
+YASH SHUKLA must document subsequent personal review, edits and reruns separately.
+
+IMPORTANT LIMITS
+This is the sklearn 8x8 digits dataset, NOT 28x28 MNIST. Results from papers on
+MNIST are background, not directly comparable. The app does not accept arbitrary
+phone photos. It is an educational benchmark, not a production OCR system.
+The final phase still needs LSTM results, repeated-run analysis, 12+ references,
+the full Part C report, a signed final contribution statement and presentation.
